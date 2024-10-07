@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Live dome link , copy the link and paste it in your browser 
 <h3>fooddeliveryappbysanket.netlify.app</h3>
 <p>Or Click below , direct access </p>
-<a href"fooddeliveryappbysanket.netlify.app"> Click Here </a>
+<a href="https://fooddeliveryappbysanket.netlify.app"> Click here </a>
 
 ## Available Scripts
 

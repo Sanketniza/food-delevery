@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+
+import "../../Styles/HeaderStyle.css";
+import "../../index.css";
+
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo/logo.png";
-import "../../Styles/HeaderStyle.css";
 
 const Header = () => {
   
   const [nav, setNav] = useState(false);
-// food-app/src/components/Layouts/Header.js
+  
   // Scroll Navbar
   const changeValueOnScroll = () => {
     const scrollValue = document?.documentElement?.scrollTop;
@@ -18,11 +21,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        className={`${nav === true ? "sticky" : ""}`}
-      >
+      <Navbar collapseOnSelect expand="lg" className={`${nav === true ? "sticky" : ""}`} >
         <Container>
           <Navbar.Brand href="#home">
             <Link to="/" className="logo">
@@ -32,12 +31,15 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
+
               <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
+
               <Nav.Link as={Link} to="/about">
                 About
               </Nav.Link>
+
               <Nav.Link as={Link} to="/menu">
                 Our Menu
               </Nav.Link>
@@ -50,12 +52,14 @@ const Header = () => {
               <Nav.Link as={Link} to="/contact">
                 Contact
               </Nav.Link>
+
               <Nav.Link as={Link} to="/">
                 <div className="cart">
                   <i class="bi bi-bag fs-5"></i>
                   <em className="roundpoint">2</em>
                 </div>
               </Nav.Link>
+              
             </Nav>
           </Navbar.Collapse>
         </Container>

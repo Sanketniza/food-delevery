@@ -2,8 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Live dome link
+# Live dome link , copy the link and paste it in your browser 
 <h3>fooddeliveryappbysanket.netlify.app</h3>
+#or
+<a href"fooddeliveryappbysanket.netlify.app"> Click Here </a>
 
 ## Available Scripts
 
